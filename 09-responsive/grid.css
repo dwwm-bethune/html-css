@@ -1,0 +1,72 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2em; /* 20px x 2 = 40px */
+}
+
+/* rem = root em */
+/* em se base sur le parent, rem sur html */
+h1.rem {
+    font-size: 2rem; /*  */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4em; /* 14px * 4 = 56px */
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex > div {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.flex > div > div {
+    background-color: red;
+    width: 30%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    .flex > div > div {
+        width: 90%;
+    } 
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main > .flex {
+        width: 100%;
+    }
+}

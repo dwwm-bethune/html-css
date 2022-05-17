@@ -1,0 +1,60 @@
+body {
+    background-color: lightgray;
+}
+
+/*
+On a des sélecteurs en CSS
+- Par balise (p, h2)
+- Par classe (.majuscule)
+- Par id (#p1)
+*/
+
+.red {
+    background-color: rgba(125, 45, 0, 1);
+    background-color: #ffaaf5;
+    background-color: red;
+    color: white;
+}
+
+.majuscule {
+    text-transform: uppercase;
+}
+
+#p1 {
+    color: green;
+}
+
+#p2 {
+    background-color: orange;
+}
+
+.big-blue {
+    font-weight: bold;
+    color: blue;
+}
+
+/* .text-red */
+/* span:last-child */
+/* span:nth-child(3) */
+span:last-of-type {
+    color: red;
+}
+
+.green { /* h2 et tous les p */
+    color: green;
+}
+
+/* Tous les éléments avec green ET other */
+.green.other {
+    font-weight: bold;
+}
+
+/* Tous les h2 avec green ET other */
+h2.green.other {
+    font-size: 30px;
+}
+
+/* Tous les éléments avec green OU other */
+.green, .other {
+    font-style: italic;
+}

@@ -1,0 +1,186 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text, .images {
+    width: 46%;
+}
+
+.title {
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.title h1, .title h2 {
+    margin: 0;
+}
+
+.title h2 {
+    color: #6d7d92;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title h1 {
+    color: #0f172a;
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.reviews-location {
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.reviews-location > span {
+    margin: 0 20px 0 10px;
+}
+
+.reviews-location .blue {
+    color: #3163ea;
+}
+
+.reviews-location .grey {
+    color: #b7bcc5;
+}
+
+.reviews-location .bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #3163ea;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.text p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.75em;
+    margin-top: 20px;
+}
+
+.images {
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.images .main {
+    margin-bottom: 20px;
+}
+
+.images .secondary {
+    width: 48%;
+    height: 130px;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 85%;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .text, .images {
+        width: 100%;
+    }
+
+    .title {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .images .main {
+        width: 48%;
+    }
+
+    .images .secondary {
+        width: 24%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .images .secondary {
+        width: 48%;
+    }
+
+    .images .secondary:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -100px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .title h1, .title h2 {
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    .title h1 {
+        margin-bottom: 40px;
+    }
+
+    .images {
+        position: relative;
+    }
+
+    .images:after {
+        content: '';
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        bottom: 20px;
+        background-image: linear-gradient(to top, #0f172a, transparent);
+        border-radius: 20px;
+    }
+
+    .images .main {
+        width: 100%;
+        height: 250px;
+        /* filter: sepia(40%) blur(3px); */
+    }
+
+    .images .secondary {
+        display: none;
+    }
+}

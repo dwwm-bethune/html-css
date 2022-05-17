@@ -1,0 +1,71 @@
+body {
+    background-image: url(galaxy.png);
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    display: none;
+}
+
+.long-time-ago {
+    color: #4bd5ee;
+    font-size: 32px;
+    opacity: 0;
+    animation-name: long-time-ago;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes long-time-ago {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.crawl {
+    font-size: 64px;
+    color: #ffff66;
+    text-align: justify;
+    width: 800px;
+    height: 3200px;
+    position: absolute;
+    bottom: 0;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: center bottom;
+}
+
+.crawl div {
+    position: absolute;
+    top: 100%;
+    animation-name: crawl;
+    animation-delay: 6s;
+    animation-duration: 44s;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}

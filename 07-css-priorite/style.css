@@ -1,0 +1,47 @@
+section { /* 10010 */
+    background-color: red !important;
+}
+
+#container { /* 11000 */
+    background-color: yellow !important;
+}
+
+/* Un id container et une classe en même temps */
+#container.container { /* 11100 */
+    background-color: blue !important;
+}
+
+p[title="Salut"] {
+    background-color: green;
+}
+
+/* un .container dans un #container */
+#container .container {}
+
+/* un .container DIRECTEMENT enfant d'un #container */
+#container > .container {}
+
+/* sélectionne les p DIRECTEMENT précédés d'un p (B, C, E) */
+#content p + p {
+    /* display: none; */
+}
+
+#content p:hover + p {
+    display: block;
+    background-color: purple;
+}
+
+/* sélectionne les p précédés d'un p (B, C, D, E) */
+#content p ~ p {
+    color: red;
+}
+
+#content p:first-child {
+    border: 1px solid green;
+}
+
+#content p:nth-child(3) {
+    border: 1px solid yellow;
+}
+
+#content p:last-child {}

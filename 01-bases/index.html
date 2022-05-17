@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Ma première page HTML</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="top"></div>
+        <!-- Un titre de niveau 1 (importance), le niveau max est 6 -->
+        <h1>Hello world !</h1>
+        <h2>Un sous-titre</h2>
+        <!-- L'indentation est très importante.
+             Alt + majuscule + p pour tout réindenter.
+             Majuscule + tab pour indenter plusieurs lignes ou Majuscule - tab -->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dicta soluta obcaecati porro beatae sit
+            incidunt provident labore nesciunt impedit, fuga sint nihil, ipsam recusandae. Nobis quaerat labore et.
+        </p>
+
+        <p>
+            Un &nbsp;&nbsp;&nbsp; texte qui <br>
+            passe à la ligne.
+        </p>
+
+        <hr>
+
+        <!-- Pour les images, on doit définir un chemin -->
+        <!-- Le chemin peut être absolu: http://site.com/image.jpg -->
+        <!-- Le chemin peut être relatif: image.jpg -->
+        <img src="un-chaton.jpeg" width="200" alt="Un chaton">
+
+        <!-- On peut afficher des listes -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>
+                <p>Item 4</p>
+            </li>
+        </ol>
+
+        <!--
+            Ecrire le code HTML permettant d'avoir le rendu suivant :
+            1. Chien
+                ° Jack Russel
+                ° Doberman
+                ° Husky
+            2. Chat
+                ° Gouttière
+                ° Européen
+                ° Persan
+            3. Oiseau
+                ° Pigeon
+                ° Perroquet
+                ° Roucoups
+        -->
+        <ol>
+            <li>
+                <span>Chien</span>
+                <ul>
+                    <li>Jack Russel</li>
+                    <li>Doberman</li>
+                    <li>Husky</li>
+                </ul>
+            </li>
+            <li>
+                <span>Chat</span>
+                <ul>
+                    <li>Gouttière</li>
+                    <li>Européen</li>
+                    <li>Persan</li>
+                </ul>
+            </li>
+            <li>
+                <span>Oiseau</span>
+                <ul>
+                    <li>Pigeon</li>
+                    <li>Perroquet</li>
+                    <li>Roucoups</li>
+                </ul>
+            </li>
+        </ol>
+
+        <pre>
+            &lt;h1&gt;Create Post&lt;/h1&gt;
+
+                       .-.
+                      |_:_|
+                     /(_Y_)\
+.                   ( \/M\/ )
+ '.               _.'-/'-'\-'._
+   ':           _/.--'[[[[]'--.\_
+     ':        /_'  : |::"| :  '.\
+       ':     //   ./ |oUU| \.'  :\
+         ':  _:'..' \_|___|_/ :   :|
+           ':.  .'  |_[___]_|  :.':\
+            [::\ |  :  | |  :   ; : \
+             '-'   \/'.| |.' \  .;.' |
+             |\_    \  '-'   :       |
+             |  \    \ .:    :   |   |
+             |   \    | '.   :    \  |
+             /       \   :. .;       |
+            /     |   |  :__/     :  \\
+           |  |   |    \:   | \   |   ||
+          /    \  : :  |:   /  |__|   /|
+      snd |     : : :_/_|  /'._\  '--|_\
+          /___.-/_|-'   \  \
+                         '-'
+        </pre>
+
+        <p>
+            <strong>En gras</strong>
+            <em>en italique</em>
+            <s>un texte barré</s>
+            <mark>Test</mark>
+            <u>Souligné</u>
+        </p>
+
+        <!-- Les liens en HTML -->
+        <!-- Le lien relatif -->
+        <a href="index.html">Accueil</a>
+        <!-- Le lien absolu (externe) -->
+        <a href="https://google.fr" target="_blank">Google</a>
+
+        <a href="#top">Retour en haut de la page</a>
+
+        <!-- On peut faire des tableaux pour lister des données -->
+        <table border="1px" cellspacing="0" cellpadding="20px">
+            <thead>
+                <tr> <!-- Une ligne -->
+                    <th>Nom</th> <!-- Une colonne -->
+                    <th>Année de sortie</th>
+                    <th>Acteurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spider-Man: Far from home</td>
+                    <td align="center">2019</td>
+                    <td>Tom Holland, Zendaya</td>
+                </tr>
+                <tr>
+                    <td>The Batman</td>
+                    <td align="center" colspan="2">2022</td>
+                </tr>
+            </tbody>
+            <caption align="bottom">Mes films</caption>
+        </table>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

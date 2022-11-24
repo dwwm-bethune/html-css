@@ -1,14 +1,13 @@
 TP Bootstrap vs Tailwind :
 
-Nous allons travailler en groupe de 3/4 personnes aujourd'hui (4 groupes max).
-2 groupes vont travailler sous Bootstrap et 2 groupes vont travailler avec Tailwind.
+Nous allons travailler en groupe de 3/4 personnes (4 groupes max).
 Nous avons une maquette commune à intégrer. Chaque personne du groupe devra intégrer la maquette avec son propre code.
 Le groupe pourra s'entraider sur le framework et sa documentation.
 
-Groupe 1 (Bootstrap) : William, Julien H, Steven
-Groupe 2 (Bootstrap) : Nabil, Yanis, Dylan
-Groupe 3 (Bootstrap) : Gwenael, Maxime, Corentin
-Groupe 4 (Tailwind) : Quentin, Florian, Magalie, Kevin, Julien, Donavan
+Groupe 1 (HTML / CSS) : Robin, Anthony, Romain, Timothé, Jeremy, Mathis, Amandine
+Groupe 2 (Bootstrap) : Yasser, Sybel, Fares, Cindy, Cécile
+Groupe 3 (Tailwind) : Nawal, Céline
+Groupe 4 (Indécis) : Nathanael
 
 Chaque personne a le droit à un joker pour switcher de groupe (de framework). Si vous voulez utiliser Bootstrap et Tailwind en même temps (non conseillé), vous pouvez
 configurer Tailwind avec un préfixe sur ce lien : https://tailwindcss.com/docs/configuration#prefix
